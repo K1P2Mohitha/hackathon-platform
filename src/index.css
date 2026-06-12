@@ -65,7 +65,9 @@
 body {
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2 {
   font-family: var(--heading);
@@ -108,4 +110,13 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.4);
 }
